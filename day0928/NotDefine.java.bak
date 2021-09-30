@@ -1,0 +1,9 @@
+class  NotDefine
+{
+	public static void main(String[] args) 
+	{
+		//String name; // 선언을 안하면
+		name = "최현호"; // 이거 못씀
+		System.out.println("이름은"+name);
+	}
+}
