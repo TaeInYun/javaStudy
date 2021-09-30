@@ -1,0 +1,16 @@
+dio . 
+git commit -m "first commit"
+
+
+git push -u origin main
+
+git remote add origin https
+git remote -v
+git push -u origin main
+
+
+://github.com/TaeInYun/javaStudy
+
+git branch -M main
+git remote add origin https://github.com/TaeInYun/javaStudy.git
+git push -u origin main
