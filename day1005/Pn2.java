@@ -1,0 +1,47 @@
+
+import java.util.Scanner;
+class  Pn2
+{
+	public static void main(String[] args) 
+	{
+	   Scanner sc = new Scanner(System.in);
+	   String P;
+	   char R,S,C;
+	   int width, high;
+	   double result =0;
+		System.out.print("원하는 연산을 선택하시오");
+		P =sc.next();
+
+
+			if(P == R){
+				System.out.println("사각형의 가로를 입력하시오.");
+				width = sc.nextInt();
+				System.out.println("사각형의 세로를 입력하시오.");
+				high = sc.nextInt();
+				result = (double)width*high;
+			}
+
+
+			else if(P == S){
+				System.out.println("삼각형의 가로를 입력하시오.");
+				width = sc.nextInt();
+				System.out.println("삼각형의 세로를 입력하시오.");
+				high = sc.nextInt();
+				result = (double)width*high/2;
+			}
+
+
+			else if(P == C){
+				System.out.println("원의 반지름을 입력하시오.");
+				width = sc.nextInt();
+				result = (double)width*width*3.14;
+			}
+			else
+				System.out.println("잘못 입력했습니다.");
+
+	    System.out.println("면적은" + result + "입니다");
+
+
+
+	}
+}
