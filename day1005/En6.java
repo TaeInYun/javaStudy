@@ -1,4 +1,4 @@
-
+// ½Ã±×¸¶ 
 class  EN6  
 {
 	public static void main(String[] args) 

@@ -6,12 +6,14 @@ class Pn1
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		String sign;
+		char sign;
+		//String sign;
 		//String +, -, *, /
-		int n1=0, n2=0;
+		int n1,n2;
+		//int n1=0, n2=0;
 
-		System.out.print("부호를 입력하시오");
-		sign = sc.next();
+		System.out.print("연산자를 입력하시오");
+		sign = sc.next().charAt(0); //+ 로 입력하면 char 0번째 변수로 입력
 
 		System.out.print("첫번재 숫자를 입력하시오");
 		n1 = sc.nextInt();
@@ -20,25 +22,24 @@ class Pn1
 		n2 = sc.nextInt();
 
 
-		if(sign == + ){
-			n= n1+n2;
-			System.out.println(n);
+		if(sign == '+' ){
+			System.out.println(n1+ "+"+n2+"="+(n1+n2));
 		}
-		   else if(sign == - ){
-			n = n1-n2;
-			System.out.println(n);
+		   else if(sign == '-' ){
+			System.out.println(n1+ "-"+n2+"="+(n1-n2));
 		}
-		else if(sign == * ){
-			n = n1*n2;
-			System.out.println(n);
+		else if(sign == '*' ){
+			System.out.println(n1+ "*"+n2+"="+(n1*n2));
 		}
-		else if(sign == / ){
-			if(b == 0){
+		else if(sign == '/' ){
+			if(n2 == 0){
 			 System.out.println("분모는 0이 올수 없습니다.");
 			}else{
-				n = n1/n2;
-			 System.out.println(n);
+			 System.out.println(n1+ "/"+n2+"="+(n1/n2));
 			}
+		}
+		else{
+			 System.out.println("잘못된 연산자");
 		}
 
 
